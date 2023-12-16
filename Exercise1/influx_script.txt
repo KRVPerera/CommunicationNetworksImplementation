@@ -1,0 +1,12 @@
+SHOW USERS
+CREATE USER influxDBuser WITH PASSWORD 'influxDBpass' WITH ALL PRIVILEGES
+SHOW USERS
+
+
+SHOW DATABASES
+CREATE DATABASE dht
+GRANT ALL ON "dht" TO "influxDBuser"
+
+exit
+
+# influx -import -path=influx_script.txt

@@ -4,7 +4,7 @@
 sudo systemctl start influxdb
 sudo service grafana-server start
 
-cd ~/projecs/cn1-impl-opt-coap
+cd ~/projects/cn1-impl-opt-coap
 
 # Start the CoAP server
 cd server
